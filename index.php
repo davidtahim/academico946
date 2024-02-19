@@ -10,6 +10,16 @@
     <h1>
         <b>Controle Acadêmico</b>
     </h1>
-    <p>Bem vindo ao <b>sistema de controle academico</b>.</p> <p>Aqui você poderá consultar suas notas.</p> <p>E também sua <i>frequencia</i>.</p> 
+    <p>Bem vindo ao <b>sistema de controle academico</b>.</p> <p>Aqui você poderá consultar suas <a href="notas.php" alt="notas da turma" target="_self">notas.</a></p><p>E também sua <i><a href="frequencia.php" alt="frequencia dos alunos" >frequencia</a></i>.</p> 
+<h2>Menu</h2>
+<ul>
+    <li><a href="aluno.php">Alunos</a></li>
+    <li><a href="professor.php">Professores</a></li>
+    <li><a href="disciplina.php">Disciplinas</a></li>
+    <li><a href="turma.php">Turmas</a></li>
+    <li><a href="nota.php">Notas</a></li>
+    <li><a href="frequencia.php">Frequencia</a></li>
+</ul>
+
 </body>
 </html>
