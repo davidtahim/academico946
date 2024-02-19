@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/principal.css">
 </head>
 <body id="professor">
+<a href="index.php" target="_blank" rel="noopener noreferrer">Início</a>
     <h1>Professores</h1>
     <table>
         <tr>
