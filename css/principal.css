@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(fonte/Roboto-Regular.ttf);
+}
+
 /* comum a todas as páginas */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'RobotoRegular';
 }
 
 p {
