@@ -17,3 +17,18 @@ function resultado(form) {
         alert ("Reprovado "+ media);
     }
 }
+
+
+function justificafalta(form) {
+    var jf = confirm("Justifica Falta do(a) "+form.nomealuno.value+" ?"); 
+   if (jf == true) {
+    var textojf = prompt ("Digite a justificativa.");
+    
+   } else {
+
+    alert ("Falta não justificada");
+    
+   }
+
+   
+}
