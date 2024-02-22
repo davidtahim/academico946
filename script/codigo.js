@@ -60,3 +60,22 @@ function testaform() {
     }
     
 }
+
+function testasenha() {
+    var p1 = document.forms["formsenha"]["senha"].value; 
+    var p2 = document.forms["formsenha"]["confirmasenha"].value; 
+
+
+    if (p1.length < 6) {
+        
+        alert("Senha muito pequena");
+        return false;
+    }
+
+    if (p1 != p2) {
+
+        alert("Senhas diferentes");
+        return false;
+        
+    }
+}
