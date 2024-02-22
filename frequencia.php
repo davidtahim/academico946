@@ -9,7 +9,7 @@
 </head>
 <body id="frequencia">
     <h1>Frequencia do Aluno</h1>
-    <form action="" method="post">
+    <form name="formalunos" action="" method="post">
        <p>
             <label for="matricula">Matrícula</label>
             <input type="text" name="matricula" id="matricula">
@@ -23,6 +23,7 @@
             <input type="date" name="datafalta" id="datafalta">
        </p>
        <button type="button" name="button" onclick="justificafalta(this.form)">Justificar Falta</button>
+       <button type="button" onclick="testaform(this.form)">Testar dados</button>
     </form>
 </body>
 </html>

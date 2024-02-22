@@ -32,3 +32,31 @@ function justificafalta(form) {
 
    
 }
+
+
+function testaform() {
+
+    var n = document.forms["formalunos"]["nomealuno"].value;
+    var m = document.forms["formalunos"]["matricula"].value;
+
+     
+    
+    if (m==null || m=="") {
+
+        alert("A matrícula precisa ser informada");
+
+       } else { 
+        
+        alert("Matricula digitada");
+        
+    }
+
+    if (n==null || n=="") {
+
+        alert("Nome do aluno precisa ser informado");
+
+    } else { alert("Aluno digitado");
+        
+    }
+    
+}
