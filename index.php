@@ -22,6 +22,22 @@
     <li><a href="nota.php">Notas</a></li>
     <li><a href="frequencia.php">Frequencia</a></li>
 </ul>
+<?php
+// meu primeiro código
+echo '<h2>'.'Sistema acadêmico'.'</h2>';
 
+$aluno='<p>'.'David Tahim'.'</p>';
+$curso="Análise e desenvolvimento de sitemas"; 
+/*
+Esse é um comentário 
+
+*/
+
+echo "O aluno: ".$aluno." Frequenta o curso: ".$curso; 
+
+
+$notas = array("prova1" => 8.3, "prova2"=>5.9, "prova3" => 9.2);
+echo '<p>'.($notas["prova1"]+$notas["prova2"]+$notas["prova3"])/3,'</p>';
+?>
 </body>
 </html>
