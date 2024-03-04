@@ -13,7 +13,11 @@
     <label for="aluno">Nome:</label>
     <input type="text" name="aluno" id="aluno">
     <label for="curso">Curso:</label>
-    <input type="text" name="curso" id="curso">
+    <input type="radio" name="curso" id="curso" value="m">Manutenção de Computadores
+    <input type="radio" name="curso" id="curso" value="r">Redes de Computadores
+    <input type="radio" name="curso" id="curso" value="p">Programação de Computadores
+    <input type="radio" name="curso" id="curso" value="w">Programação Web
+
     <input type="reset" value="Limpar">
     <input type="submit" value="Enviar">
 
