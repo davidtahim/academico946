@@ -7,14 +7,22 @@
 </head>
 <body>
     <form action="media.php" method="post">
-<label for="nome">Nome do Aluno:</label>
-<input type="text" name="nome" id="nome">
-<label for="p1">Nota da primeira prova :</label>
-<input type="number" name="p1" id="p1">
-<label for="p2">Nota da segundo prova :</label>
-<input type="number" name="p2" id="p2">
-<label for="falta">Quantidade de faltas :</label>
-<input type="number" name="falta" id="falta">
+<p>
+    <label for="nome">Nome do Aluno:</label>
+    <input type="text" name="nome" id="nome">
+</p>
+<p>
+    <label for="p1">Nota da primeira prova :</label>
+    <input type="number" name="p1" id="p1">
+</p>
+<p>
+    <label for="p2">Nota da segundo prova :</label>
+    <input type="number" name="p2" id="p2">
+</p>
+<p>
+    <label for="falta">Quantidade de faltas :</label>
+    <input type="number" name="falta" id="falta">
+</p>
 <input type="submit" value="Enviar">
 
 
