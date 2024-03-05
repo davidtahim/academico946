@@ -21,7 +21,52 @@
     <input type="reset" value="Limpar">
     <input type="submit" value="Enviar">
 
-    
+  
     </form>
+    <table border="1">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cursos</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+            require ('script/conexao.php');
+            $sql = "SELECT * FROM matricula";
+            $resultado = mysqli_query($conexao, $sql);
+            while ($row = mysqli_fetch_assoc($resultado)) {
+               echo "<tr>";
+               echo "<td>".$row['nome']."</td>";
+               echo "<td>";
+               switch ($row['curso']) {
+                case 'm':
+                    echo "Manutenção de computadores";
+                    break;
+                case 'r':
+                    echo "Redes de computadores";
+                    break;
+                case 'p':
+                    echo "Programação de computadores";
+                    break;
+                case 'w':
+                    echo "Programação Web";
+                    break;
+                
+                default:
+                    echo "Por favor preencha os dados" ;
+                    break;
+               }
+            echo "</td>";
+               echo "</tr>";
+            }
+
+            mysqli_close($conexao);
+        ?>
+    </tbody>
+
+
+    </table>
 </body>
 </html>
