@@ -59,6 +59,7 @@
                     break;
                }
             echo "</td>";
+            // inserir a edição dos itens
                echo "</tr>";
             }
 
