@@ -59,7 +59,10 @@
                     break;
                }
             echo "</td>";
-            // inserir a edição dos itens
+            echo "<td>";
+               echo "<a href='editar_curso.php?id=".$row['id']."'>Editar</a> | " ;
+               echo "<a href='excluir_curso.php?id=".$row['id']."'>Excluir</a>" ;
+            echo "</td>";
                echo "</tr>";
             }
 
