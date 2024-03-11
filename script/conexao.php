@@ -7,6 +7,6 @@ if (!$conexao) {
     
 }
 
-echo 'conexão bem sucedida';
+// echo 'conexão bem sucedida';
 
 ?>
