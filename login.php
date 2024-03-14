@@ -18,7 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit;
         } else {
             echo "Usuário ou senha inválido" ;
-        }
+            header('location:dashboard.php');
+            exit;
+        }   
 
         mysqli_close($conexao);
 
