@@ -13,7 +13,7 @@
     <form action="cadastro_aluno.php" method="post">
     <p>
         <label for="aluno">Nome</label>
-        <input type="text" name="aluno" id="aluno">
+        <input type="text" name="aluno" id="aluno" required>
     </p>
     <p>
         <label for="cpf">CPF:</label>
