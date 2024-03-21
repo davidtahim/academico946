@@ -28,39 +28,35 @@
                 $resultado = mysqli_query($conexao, $sql);
                 while ($row = mysqli_fetch_assoc($resultado)) {
                     echo "<option value='{$row['cpf']}'>{$row['nome']}</option>";
-                    
-                
-                
                 }
             ?>
         </select>
     </p>
     <p>
-        <label for="telefone">Telefone:</label>
-        <input type="tel" name="telefone" id="telefone">
+        <label for="nivel">Nível:</label>
+        <select name="nivel" id="nivel">
+            <option value="">Selecione o nível do curso</option>
+            <option value="tecnico">Técnico</option>
+            <option value="tecnologo">Tecnólogo</option>
+            <option value="bacharelado">Bacharelado</option>
+            <option value="licenciatura">Licenciatura</option>
+            <option value="especializacao">Especialização</option>
+        </select>
+    </p>
+    <p>
+        <label for="modalidade">Modalidade:</label>
+        <select name="modalidade" id="modalidade">
+            <option value="">Selecione a modalidade</option>
+            <option value="presencial">Presencial</option>
+            <option value="ead">Educação à distância</option>
+        </select>
     </p>
     </fieldset>
-    <fieldset>
-        <legend>Informações Acadêmicas</legend>
-
-    <p>
-        <label for="formacao">Formação Acadêmica</label>
-        <input type="text" name="formacao" id="formacao">
-    </p>
-   <p>
-    <label for="titulacao">Titulação</label>
-    <select name="titulacao" id="titulacao">
-        <option value="">Selecione a Titulação</option>
-        <option value="graduacao">Graduação</option>
-        <option value="mestrado">Mestrado</option>
-        <option value="doutorado">Doutorado</option>
-    </select>
-   </p>     
+   <p>   
     <input type="reset" value="Limpar">
     <input type="submit" value="Enviar">
-    </fieldset>   
+    </p>   
 </form>
-   
     
 </body>
 </html>
