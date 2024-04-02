@@ -13,18 +13,10 @@
     <form action="cadastro_matricula.php" method="post">
     <p>
         <label for="aluno">Selecione o aluno:</label>
-        <input type="text" name="nome" id="nome" required>
-    </p>
-    <p>
-        <label for="duracao">Duração:</label>
-        <input type="text" name="duracao" id="duracao">
-    </p>
-    <p>
-        <label for="coordenador">Coordenador:</label>
-        <select name="coordenador" id="coordenador">
+        <select name="aluno" id="aluno">
             <?php
                 require ('script/conexao.php');
-                $sql = "SELECT cpf,nome FROM professor";
+                $sql = "SELECT cpf,nome FROM aluno";
                 $resultado = mysqli_query($conexao, $sql);
                 while ($row = mysqli_fetch_assoc($resultado)) {
                     echo "<option value='{$row['cpf']}'>{$row['nome']}</option>";
@@ -33,22 +25,16 @@
         </select>
     </p>
     <p>
-        <label for="nivel">Nível:</label>
-        <select name="nivel" id="nivel">
-            <option value="">Selecione o nível do curso</option>
-            <option value="tecnico">Técnico</option>
-            <option value="tecnologo">Tecnólogo</option>
-            <option value="bacharelado">Bacharelado</option>
-            <option value="licenciatura">Licenciatura</option>
-            <option value="especializacao">Especialização</option>
-        </select>
-    </p>
-    <p>
-        <label for="modalidade">Modalidade:</label>
-        <select name="modalidade" id="modalidade">
-            <option value="">Selecione a modalidade</option>
-            <option value="presencial">Presencial</option>
-            <option value="ead">Educação à distância</option>
+        <label for="curso">Selecione o curso:</label>
+        <select name="curso" id="curso">
+            <?php
+                require ('script/conexao.php');
+                $sql = "SELECT id,nome FROM curso";
+                $resultado = mysqli_query($conexao, $sql);
+                while ($row = mysqli_fetch_assoc($resultado)) {
+                    echo "<option value='{$row['id']}'>{$row['nome']}</option>";
+                }
+            ?>
         </select>
     </p>
     </fieldset>

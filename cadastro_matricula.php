@@ -13,7 +13,7 @@ if (mysqli_query($conexao, $sql)) {
     echo "Erro ao inserir registro: " . mysqli_error($conexao);
 }
 
-header("location:cadastrocurso.php");
+header("location:cadastromatricula.php");
 
 
 ?>
