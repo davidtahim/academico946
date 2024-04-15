@@ -29,7 +29,7 @@
         <select name="curso" id="curso">
             <?php
                 require ('script/conexao.php');
-                $sql = "SELECT id,nome FROM curso";
+                $sql = "SELECT id,nome FROM curso;";
                 $resultado = mysqli_query($conexao, $sql);
                 while ($row = mysqli_fetch_assoc($resultado)) {
                     echo "<option value='{$row['id']}'>{$row['nome']}</option>";
